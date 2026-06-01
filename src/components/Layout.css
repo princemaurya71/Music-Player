@@ -1,0 +1,28 @@
+.layout {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.layout__main {
+  flex: 1;
+  padding: calc(var(--nav-height) + 24px) 24px calc(var(--player-height) + 32px);
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .layout__main {
+    padding: calc(var(--nav-height) + 16px) 16px calc(var(--player-height) + 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .layout__main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

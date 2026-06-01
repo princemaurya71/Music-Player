@@ -1,0 +1,178 @@
+.coverflow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0 16px;
+  min-height: 420px;
+}
+
+.coverflow__stage {
+  perspective: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  padding: 40px 0 24px;
+}
+
+.coverflow__track {
+  position: relative;
+  width: 260px;
+  height: 340px;
+  transform-style: preserve-3d;
+}
+
+.coverflow__card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -130px;
+  width: 260px;
+  height: 340px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: transparent;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.coverflow__card--active {
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.45);
+}
+
+.coverflow__glow {
+  position: absolute;
+  inset: -40%;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: pulse-glow 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.coverflow__image-wrap {
+  position: relative;
+  z-index: 1;
+  height: 72%;
+  overflow: hidden;
+}
+
+.coverflow__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coverflow__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 16px 18px;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid var(--glass-border);
+  text-align: left;
+}
+
+.coverflow__title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coverflow__artist {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.coverflow__playing {
+  position: absolute;
+  inset: -3px;
+  border-radius: calc(var(--radius-lg) + 3px);
+  border: 2px solid var(--accent);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.coverflow__nav-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.coverflow__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--glass-border);
+  transition: all var(--transition);
+  padding: 0;
+}
+
+.coverflow__dot--active {
+  width: 24px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+
+.coverflow__arrows {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coverflow {
+    min-height: 360px;
+  }
+
+  .coverflow__track {
+    width: 220px;
+    height: 300px;
+  }
+
+  .coverflow__card {
+    width: 220px;
+    height: 300px;
+    margin-left: -110px;
+  }
+
+  .coverflow__arrows {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .coverflow__arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .coverflow__track {
+    width: 200px;
+    height: 280px;
+  }
+
+  .coverflow__card {
+    width: 200px;
+    height: 280px;
+    margin-left: -100px;
+  }
+}

@@ -1,0 +1,113 @@
+export const playlists = [
+  { id: 'chill', name: 'Chill Vibes', color: '#6366f1' },
+  { id: 'workout', name: 'Workout Energy', color: '#ef4444' },
+  { id: 'focus', name: 'Deep Focus', color: '#14b8a6' },
+  { id: 'night', name: 'Night Drive', color: '#8b5cf6' },
+]
+
+export const songs = [
+  {
+    id: '1',
+    title: 'Channa Mereya',
+    artist: 'Arjit Singh',
+    album: 'After Hours',
+    cover:
+      'src\\assets\\1.png',
+    audio: 'src\\data\\07 Channa Mereya - Arijit Singh 320Kbps.mp3',
+    duration: 200,
+    trending: true,
+    playlistIds: ['night', 'chill'],
+    accent: '#02e1ff',
+  },
+  {
+    id: '2',
+    title: 'Chikani Chameli',
+    artist: 'Shreya Ghosal',
+    album: 'Agneepath',
+    cover:
+      'src\\assets\\2.png',
+    audio: 'src\\data\\320kbps_Agneepath 2012 - Chikni Chameli.mp3',
+    duration: 256,
+    trending: true,
+    playlistIds: ['chill'],
+    accent: '#7c3aed',
+  },
+  {
+    id: '3',
+    title: 'Akh Lad Jaave',
+    artist: 'Badshah, Asees Kaur, Jubin Nautiyal',
+    album: 'Loveratri',
+    cover:
+      'src\\assets\\3.png',
+    audio: 'src\\data\\320kbps_Loveratri 2018 - Akh Lad Jaave.mp3',
+    duration: 225,
+    trending: true,
+    playlistIds: ['workout', 'night'],
+    accent: '#0ea5e9',
+  },
+  {
+    id: '4',
+    title: 'Aao Kabhi Haveli Pe',
+    artist: 'Badshah, Nikhita Gandhi',
+    album: 'Stree',
+    cover:
+      'src\\assets\\4.png',
+    audio: 'src\\data\\320kbps_Stree 2018 - Aao Kabhi Haveli Pe.mp3',
+    duration: 230,
+    trending: false,
+    playlistIds: ['night'],
+    accent: '#f59e0b',
+  },
+  {
+    id: '5',
+    title: 'Dil Tod Ke',
+    artist: 'B Praak',
+    album: '',
+    cover:
+      'src\\assets\\6.png',
+    audio: 'src\\data\\Dil Tod Ke - B Praak 128 Kbps.mp3',
+    duration: 203,
+    trending: true,
+    playlistIds: ['workout', 'chill'],
+    accent: '#ec4899',
+  },
+  {
+    id: '6',
+    title: 'Girl I need you',
+    artist: 'Ariji Singh',
+    album: 'Baaghi',
+    cover:
+      'src\\assets\\8.png',
+    audio: 'src\\data\\Girl I Need You - Baaghi (Arijit Singh).mp3',
+    duration: 244,
+    trending: false,
+    playlistIds: ['focus', 'night'],
+    accent: '#06b6d4',
+  },
+  {
+    id: '7',
+    title: 'Hamari Adhuri Kahani',
+    artist: 'Arijit Singh',
+    album: 'Title Song',
+    cover:
+      'src\\assets\\5.png',
+    audio: 'src\\data\\Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3',
+    duration: 215,
+    trending: true,
+    playlistIds: ['chill', 'night'],
+    accent: '#dc2626',
+  },
+  {
+    id: '8',
+    title: 'Humnava Mere',
+    artist: 'Jubin Nautiyal',
+    album: '',
+    cover:
+      'src\\assets\\6.png',
+    audio: 'src\\data\\Humnava Mere - Jubin Nautiyal.mp3',
+    duration: 200,
+    trending: true,
+    playlistIds: ['workout'],
+    accent: '#84cc16',
+  },
+]

@@ -1,0 +1,55 @@
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ambient__gradient {
+  position: absolute;
+  inset: 0;
+  transition: background 1s ease;
+}
+
+.ambient__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
+.ambient__orb--1 {
+  width: min(60vw, 500px);
+  height: min(60vw, 500px);
+  top: 20%;
+  left: 35%;
+  transform: translateX(-50%);
+}
+
+.ambient__orb--2 {
+  width: 300px;
+  height: 300px;
+  bottom: 50%;
+  right: 50%;
+  /* background: var(--accent-glow); */
+  animation-delay: -2s;
+  opacity: 0.25;
+}
+
+.ambient__orb--3 {
+  width: 200px;
+  height: 200px;
+  top: 90%;
+  left: 50%;
+  background: rgb(255, 255, 255);
+  animation-delay: -4s;
+  opacity: 0.2;
+}
+
+.ambient__noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
