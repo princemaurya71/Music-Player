@@ -12,7 +12,7 @@ export const songs = [
     artist: 'Arjit Singh',
     album: 'After Hours',
     cover:
-      'src\\assets\\1.png',
+      'src\\assets\\img1.png',
     audio: 'src\\data\\07 Channa Mereya - Arijit Singh 320Kbps.mp3',
     duration: 200,
     trending: true,
@@ -25,7 +25,7 @@ export const songs = [
     artist: 'Shreya Ghosal',
     album: 'Agneepath',
     cover:
-      'src\\assets\\2.png',
+      'src\\assets\\img2.png',
     audio: 'src\\data\\320kbps_Agneepath 2012 - Chikni Chameli.mp3',
     duration: 256,
     trending: true,
@@ -38,7 +38,7 @@ export const songs = [
     artist: 'Badshah, Asees Kaur, Jubin Nautiyal',
     album: 'Loveratri',
     cover:
-      'src\\assets\\3.png',
+      'src\\assets\\img3.png',
     audio: 'src\\data\\320kbps_Loveratri 2018 - Akh Lad Jaave.mp3',
     duration: 225,
     trending: true,
@@ -51,7 +51,7 @@ export const songs = [
     artist: 'Badshah, Nikhita Gandhi',
     album: 'Stree',
     cover:
-      'src\\assets\\4.png',
+      'src\\assets\\img4.png',
     audio: 'src\\data\\320kbps_Stree 2018 - Aao Kabhi Haveli Pe.mp3',
     duration: 230,
     trending: false,
@@ -64,7 +64,7 @@ export const songs = [
     artist: 'B Praak',
     album: '',
     cover:
-      'src\\assets\\6.png',
+      'src\\assets\\img6.png',
     audio: 'src\\data\\Dil Tod Ke - B Praak 128 Kbps.mp3',
     duration: 203,
     trending: true,
@@ -77,7 +77,7 @@ export const songs = [
     artist: 'Ariji Singh',
     album: 'Baaghi',
     cover:
-      'src\\assets\\8.png',
+      'src\\assets\\img8.png',
     audio: 'src\\data\\Girl I Need You - Baaghi (Arijit Singh).mp3',
     duration: 244,
     trending: false,
@@ -90,7 +90,7 @@ export const songs = [
     artist: 'Arijit Singh',
     album: 'Title Song',
     cover:
-      'src\\assets\\5.png',
+      'src\\assets\\img5.png',
     audio: 'src\\data\\Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3',
     duration: 215,
     trending: true,
@@ -103,7 +103,7 @@ export const songs = [
     artist: 'Jubin Nautiyal',
     album: '',
     cover:
-      'src\\assets\\6.png',
+      'src\\assets\\img6.png',
     audio: 'src\\data\\Humnava Mere - Jubin Nautiyal.mp3',
     duration: 200,
     trending: true,
